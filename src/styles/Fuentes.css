@@ -1,0 +1,81 @@
+/* -- Fuentes Interfaz -- */
+/* @font-face {
+    font-family: motsfont;
+    src: url(/src/fonts/MOTS.ttf)
+  } */
+  
+  /* @font-face {
+    font-family: motsitalicfont;
+    src: url(/src/fonts/MOTSITALIC.otf)
+  } */
+  
+  @font-face {
+    font-family: alienfont;
+    src: url(/src/fonts/ALIENRADIO.ttf)
+  }
+
+  /* @font-face {
+    font-family: alienfontit;
+    src: url(/src/fonts/ALIENRADIOIT.otf)
+  } */
+  
+  /* -- Fuentes lenguajes -- */
+  @font-face {
+    font-family: eli;
+    src: url(/src/fonts/1-ELI.ttf)
+  }
+  
+  @font-face {
+    font-family: kaotican;
+    src: url(/src/fonts/2-KAOTICAN.otf)
+  }
+  
+  @font-face {
+    font-family: mirrortext;
+    src: url(/src/fonts/3-MIRRORTEXT.ttf)
+  }
+  
+  @font-face {
+    font-family: aquamarinef;
+    src: url(/src/fonts/4-AQUAMARINE.ttf)
+  }
+  
+  @font-face {
+    font-family: qblok;
+    src: url(/src/fonts/5-QBLOK.ttf)
+  }
+  
+  @font-face {
+    font-family: supersolar;
+    src: url(/src/fonts/6-SUPERSOLAR.ttf)
+  }
+  
+  @font-face {
+    font-family: voltik;
+    src: url(/src/fonts/7-VOLTIK.ttf)
+  }
+  
+  @font-face {
+    font-family: bloom;
+    src: url(/src/fonts/8-BLOOM.ttf)
+  }
+  
+  @font-face {
+    font-family: elii;
+    src: url(/src/fonts/9-ELII.ttf)
+  }
+  
+  @font-face {
+    font-family: spheric;
+    src: url(/src/fonts/10-SPHERIC.ttf)
+  }
+  
+  @font-face {
+    font-family: infinitum;
+    src: url(/src/fonts/11-INFINITUM.ttf)
+  }
+  
+  @font-face {
+    font-family: coloraturan;
+    src: url(/src/fonts/12-COLORATURAN.ttf)
+  }

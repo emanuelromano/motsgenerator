@@ -20,7 +20,7 @@ function About() {
         <p>
           · Music of the Spheres Generator {idioma === "es" ? "versión" : "version"}: {version}
           <br />
-          · {idioma === "es" ? "Programado por" : "Programmed by"}: <a target="_blank" rel="noreferrer" href="https://twitter.com/eromanox">Emanuel</a> / <a target="_blank" rel="noreferrer" href="https://linktr.ee/planetacoldplay">Planeta Coldplay</a>
+          · {idioma === "es" ? "Programado por" : "Programmed by"}: <a target="_blank" rel="noreferrer" href="https://linktr.ee/planetacoldplay">Planeta Coldplay</a> (<a target="_blank" rel="noreferrer" href="https://twitter.com/eromanox">Emanuel</a>)
           <br />
           · {idioma === "es" ? "Diseño de fuentes" : "Font design"}: <a target="_blank" rel="noreferrer" href="https://twitter.com/C_ian_y">Ciany</a>
           <br />

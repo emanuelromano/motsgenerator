@@ -625,7 +625,16 @@ h2 {
 }
 
 .informacion a {
+  color: #e99aff;
+  transition-duration: 0.2s;
+}
+
+.informacion a:hover {
   color: #f7d9ff;
+}
+
+.informacion a:active {
+  color: #d94fff;
 }
 
 .atras {

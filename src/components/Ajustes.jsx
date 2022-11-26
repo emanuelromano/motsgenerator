@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 
 // -- Planetas --
@@ -21,6 +22,7 @@ function Ajustes({ setTexto }) {
     const [oculto, setOculto] = useState(false);
     const [forma, setForma] = useState(1);
     const [fondo, setFondo] = useState(1);
+    const nav = useNavigate();
 
     useEffect(() => {
         setIdioma(localStorage.getItem("idioma"));
@@ -432,6 +434,18 @@ function Ajustes({ setTexto }) {
 
     // {idioma === "es" ? "" : ""}
 
+    function idiomaApp() {
+        nav('/languaje');
+    }
+
+    function sonido() {
+        
+    }
+
+    function info() {
+        nav('/info');
+    }
+
     return (
         <>
             <div className="ajustes-caja">
@@ -525,11 +539,11 @@ function Ajustes({ setTexto }) {
                 <button className="boton-guardar" id="botonguardar" onClick={() => guardarImagen()}>{idioma === "es" ? "⇩ GUARDAR IMAGEN ⇩" : "⇩ SAVE IMAGE ⇩"}</button>
 
                 <div className="botones-mini">
-                    <button className="boton-3" onClick={() => aleatorio()}>A</button>
+                    <button className="boton-3" onClick={() => idiomaApp()}>{idioma === "es" ? "IDIOMA" : "LANGUAJE"}</button>
 
-                    <button className="boton-4" onClick={() => reiniciar()}>B</button>
+                    <button className="boton-4" onClick={() => sonido()}>B</button>
 
-                    <button className="boton-5" onClick={() => reiniciar()}>C</button>
+                    <button className="boton-5" onClick={() => info()}>{idioma === "es" ? "INFO" : "ABOUT"}</button>
                 </div>
             </div>
         </>

@@ -26,7 +26,7 @@ function About() {
           <br />
           · {idioma === "es" ? "Arte, planetas y concepto" : "Art, planets and concept"}: <a target="_blank" rel="noreferrer" href="https://twitter.com/pilar_zeta">Pilar Zeta</a>, <a target="_blank" rel="noreferrer" href="https://twitter.com/vicmcmxciii">Victor Scorrano</a> & <a target="_blank" rel="noreferrer" href="https://twitter.com/coldplay">Coldplay</a> (<a target="_blank" rel="noreferrer" href="http://www.coldplay.com">Coldplay.com</a>)
           <br />
-          · {idioma === "es" ? "Construido usando" : "Built using"} <a target="_blank" rel="noreferrer" href="https://reactjs.org/">React JS</a>
+          · {idioma === "es" ? "Construida usando" : "Built using"} <a target="_blank" rel="noreferrer" href="https://reactjs.org/">React JS</a>
         </p>
 
         <Link to='/generator'> <button className="atras">{idioma === "es" ? "⇦ ATRÁS" : "⇦ BACK"}</button> </Link>

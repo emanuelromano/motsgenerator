@@ -476,6 +476,87 @@ input[type="radio"] {
   background-color: rgb(0, 0, 0);
 }
 
+.boton-3 {
+  flex: 1;
+  color: white;
+  font-family: alienfont;
+  background-color: #ffffff00;
+  border: 1px solid #A791FF;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 30px;
+  margin: 0% 2.5% 0% 5%;
+  padding: 0%;
+  transition-duration: 0.2s;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+.boton-3:hover {
+  background-color: #a791ffd4;
+  box-shadow: 0px 0px 10px #A791FF;
+}
+
+.boton-3:active {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.boton-4 {
+  flex: 1;
+  color: white;
+  font-family: alienfont;
+  background-color: #ffffff00;
+  border: 1px solid #A791FF;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 30px;
+  margin: 0% 2.5% 0% 2.5%;
+  padding: 0%;
+  transition-duration: 0.2s;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+.boton-4:hover {
+  background-color: #a791ffd4;
+  box-shadow: 0px 0px 10px #A791FF;
+}
+
+.boton-4:active {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.boton-5 {
+  flex: 1;
+  color: white;
+  font-family: alienfont;
+  background-color: #ffffff00;
+  border: 1px solid #A791FF;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 30px;
+  margin: 0% 5% 0% 2.5%;
+  padding: 0%;
+  transition-duration: 0.2s;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+.boton-5:hover {
+  background-color: #a791ffd4;
+  box-shadow: 0px 0px 10px #A791FF;
+}
+
+.boton-5:active {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
 .boton-guardar {
   color: white;
   font-family: alienfont;
@@ -483,7 +564,7 @@ input[type="radio"] {
   border: 1px solid violet;
   border-radius: 5px;
   font-size: 18px;
-  height: 80px;
+  height: 30px;
   width: 90%;
   margin: 5% 5% 5% 5%;
   padding: 0%;

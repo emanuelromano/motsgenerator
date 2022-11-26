@@ -523,6 +523,14 @@ function Ajustes({ setTexto }) {
                 </div>
 
                 <button className="boton-guardar" id="botonguardar" onClick={() => guardarImagen()}>{idioma === "es" ? "⇩ GUARDAR IMAGEN ⇩" : "⇩ SAVE IMAGE ⇩"}</button>
+
+                <div className="botones-mini">
+                    <button className="boton-3" onClick={() => aleatorio()}>A</button>
+
+                    <button className="boton-4" onClick={() => reiniciar()}>B</button>
+
+                    <button className="boton-5" onClick={() => reiniciar()}>C</button>
+                </div>
             </div>
         </>
     )

@@ -11,7 +11,7 @@ function Footer() {
   }, [])
 
   function boton() {
-    info("/about")
+    info("/info")
   }
 
   return (

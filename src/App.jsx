@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Idioma from './components/Idioma';
 import Generador from './components/Generador';
-import About from './components/About';
+import Info from './components/Info';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
           <Route exact path='/' element={<Idioma />} />
           <Route exact path='/languaje' element={<Idioma />} />
           <Route exact path='/generator' element={<Generador />} />
-          <Route exact path='/about' element={<About />} />
+          <Route exact path='/info' element={<Info />} />
         </Routes>
 
       </BrowserRouter>

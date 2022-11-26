@@ -15,7 +15,7 @@ function Header() {
                 <ul>
                     <li> <label><span className='mots'>MUSIC of the SPHERES</span> <span className='gen'>GENERATOR</span></label> </li>
 
-                    <li style={{ float: "right" }}> <label className='engranaje' onClick={() => idioma()}>⚙</label> </li> {/* style={{ float: "right" }} */}
+                    <li style={{ float: "right" }}> <label className='engranaje' onClick={() => idioma()}>⚙</label> </li>
                 </ul>
             </div>
         </>

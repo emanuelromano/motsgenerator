@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 
@@ -16,19 +16,37 @@ import epiphane from '../media/planets/EPIPHANE.jpg';
 import infinitystation from '../media/planets/INFINITYSTATION.jpg';
 import coloratura from '../media/planets/COLORATURA.jpg';
 
+// -- Audio --
+import audio from '../media/WEDDING BELLS.mp3';
+
 function Ajustes({ setTexto }) {
 
+    const nav = useNavigate();
     const [idioma, setIdioma] = useState("");
     const [oculto, setOculto] = useState(false);
     const [forma, setForma] = useState(1);
     const [fondo, setFondo] = useState(1);
-    const nav = useNavigate();
+    const [play, setPlay] = useState(true);
+
+    // let musica = new Audio(audio)
+    const musicaRef = useRef(new Audio(audio));
 
     useEffect(() => {
         setIdioma(localStorage.getItem("idioma"));
         setTexto(localStorage.getItem("textoinicial"));
         // document.getElementById("advertencia").style.display = "none";
         // document.getElementById("espacio").style.display = "none";
+
+        let p = localStorage.getItem("play")
+
+        if (p === "false") {
+            setPlay(false)
+        } else {
+            musicaRef.current.play();
+            setPlay(true)
+        }
+
+
     }, [setTexto])
 
     function textoIngresado(e) {
@@ -432,19 +450,33 @@ function Ajustes({ setTexto }) {
         document.getElementById("textoprincipal").style.textShadow = s;
     }
 
-    // {idioma === "es" ? "" : ""}
-
     function idiomaApp() {
+        setPlay(false);
+        musicaRef.current.pause();
         nav('/languaje');
     }
 
     function sonido() {
-        
+        if (play) {
+            setPlay(false);
+            musicaRef.current.pause();
+            localStorage.setItem("play", false);
+            document.getElementById("boton-4").style.textDecorationLine = "line-through";
+        } else {
+            setPlay(true);
+            musicaRef.current.play();
+            localStorage.setItem("play", true);
+            document.getElementById("boton-4").style.textDecorationLine = "none";
+        }
     }
 
     function info() {
+        setPlay(false);
+        musicaRef.current.pause();
         nav('/info');
     }
+
+    // {idioma === "es" ? "" : ""}
 
     return (
         <>
@@ -541,7 +573,7 @@ function Ajustes({ setTexto }) {
                 <div className="botones-mini">
                     <button className="boton-3" onClick={() => idiomaApp()}>{idioma === "es" ? "IDIOMA" : "LANGUAJE"}</button>
 
-                    <button className="boton-4" onClick={() => sonido()}>B</button>
+                    <button className="boton-4" onClick={() => sonido()}>{idioma === "es" ? "SONIDO" : "SOUND"}</button>
 
                     <button className="boton-5" onClick={() => info()}>{idioma === "es" ? "INFO" : "ABOUT"}</button>
                 </div>

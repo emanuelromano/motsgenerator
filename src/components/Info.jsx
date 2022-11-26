@@ -4,12 +4,12 @@ import build from "../../package.json";
 
 function About() {
 
-  const [idioma, setIdioma] = useState("")
+  const [idioma, setIdioma] = useState("");
 
   let version = build.version;
 
   useEffect(() => {
-      setIdioma(localStorage.getItem("idioma"))
+      setIdioma(localStorage.getItem("idioma"));
   }, [])
 
   return (

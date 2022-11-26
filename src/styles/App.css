@@ -519,6 +519,7 @@ input[type="radio"] {
   overflow: hidden;
   user-select: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .boton-4:hover {

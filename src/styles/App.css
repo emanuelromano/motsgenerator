@@ -157,7 +157,7 @@ body:before {
       rgba(255, 0, 0, 1) 100%);
   background-clip: text;
   color: transparent;
-  filter: brightness(140%);
+  filter: brightness(120%);
   transition-duration: 0.2s;
 }
 
@@ -172,7 +172,7 @@ body:before {
   filter: brightness(150%);
 }
 
-.banner .engranaje {
+/* .banner .engranaje {
   display: block;
   color: violet;
   text-shadow: 2px 2px 15px violet;
@@ -185,7 +185,7 @@ body:before {
   overflow: hidden;
   user-select: none;
   cursor: pointer;
-}
+} */
 
 .banner .engranaje:hover {
   color: white;

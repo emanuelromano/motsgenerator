@@ -483,27 +483,27 @@ function Ajustes({ setTexto }) {
     return (
         <>
             <div className="ajustes-caja">
-                <input type="text" id="texto" placeholder={idioma === "es" ? "Escribe aquí..." : "Write here..."} onChange={(e) => textoIngresado(e)} />
+                <input type="text" id="texto" placeholder={idioma === "es" ? "ESCRIBE AQUÍ.." : "WRITE HERE..."} onChange={(e) => textoIngresado(e)} />
 
-                <p>{idioma === "es" ? "Lenguaje:" : "Languaje:"}</p>
+                <p>{idioma === "es" ? "LENGUAJE:" : "LANGUAGE:"}</p>
 
                 <select name="lenguajes" id="lenguajes" defaultValue={2} onChange={(e) => fuente(e)}>
-                    <option value="1">E.L. I (Neon Moon I)</option>
-                    <option value="2">Kaotican (Kaotica)</option>
-                    <option value="3">Mirror Text (Echo)</option>
-                    <option value="4">Qblok (Kubik)</option>
-                    <option value="5">Aquamarine (Calypso)</option>
-                    <option value="6">Supersolar (Supersolis)</option>
-                    <option value="7">Voltik (Ultra)</option>
-                    <option value="8">Bloom (Floris)</option>
-                    <option value="9">E.L. II (Neon Moon II)</option>
-                    <option value="10">Spheric (Epiphane)</option>
-                    <option value="11">Infinitum (Infinity Station)</option>
-                    <option value="12">Coloraturan (Coloratura)</option>
+                    <option value="1">E.L. I (NEON MOON I)</option>
+                    <option value="2">KAOTICAN (KAOTICA)</option>
+                    <option value="3">MIRROR TEXT (ECHO)</option>
+                    <option value="4">QBLOK (KUBIK)</option>
+                    <option value="5">AQUAMARINE (CALYPSO)</option>
+                    <option value="6">SUPERSOLAR (SUPERSOLIS)</option>
+                    <option value="7">VOLTIK (ULTRA)</option>
+                    <option value="8">BLOOM (FLORIS)</option>
+                    <option value="9">E.L. II (NEON MOON II)</option>
+                    <option value="10">SPHERIC (EPIPHANE)</option>
+                    <option value="11">INFINITUM (INFINITY STATION)</option>
+                    <option value="12">COLORATURAN (COLORATURA)</option>
                     {/* <option value="13">Auroran (Aurora)</option> */}
                 </select>
 
-                <p>{idioma === "es" ? "Fondo:" : "Background:"}</p>
+                <p>{idioma === "es" ? "FONDO:" : "BBACKGROUND:"}</p>
 
                 <div className="radiobuttons">
                     <div className="radiolabel">
@@ -511,7 +511,7 @@ function Ajustes({ setTexto }) {
                             <input type="radio" name="tipofondo" id="fondogradiente" className="radio" value={1} onChange={(e) => cambiarFondo(e)} checked={!oculto} />
                         </div>
 
-                        <label htmlFor="fondogradiente">{idioma === "es" ? "Gradiente" : "Gradient"}</label>
+                        <label htmlFor="fondogradiente">{idioma === "es" ? "GRADIENTE" : "GRADIENT"}</label>
                     </div>
 
                     <div className="radiolabel">
@@ -519,25 +519,25 @@ function Ajustes({ setTexto }) {
                             <input type="radio" name="tipofondo" id="fondoimagen" className="radio" value={2} onChange={(e) => cambiarFondo(e)} checked={oculto} />
                         </div>
 
-                        <label htmlFor="fondoimagen" >{idioma === "es" ? "Planeta" : "Planet"}</label>
+                        <label htmlFor="fondoimagen" >{idioma === "es" ? "PLANETA" : "PLANET"}</label>
                     </div>
                 </div>
 
                 <br />
 
                 <select name="color-fondo" id="colorfondo" defaultValue={1} hidden={oculto} onChange={(e) => colorFondo(e)}>
-                    <option value="1">{idioma === "es" ? "Azul" : "Blue"}</option>
-                    <option value="2">{idioma === "es" ? "Celeste" : "Light Blue"}</option>
-                    <option value="3">{idioma === "es" ? "Verde" : "Green"}</option>
-                    <option value="4">{idioma === "es" ? "Lima" : "Lime"}</option>
-                    <option value="5">{idioma === "es" ? "Amarillo" : "Yellow"}</option>
-                    <option value="6">{idioma === "es" ? "Naranja" : "Orange"}</option>
-                    <option value="7">{idioma === "es" ? "Rojo" : "Red"}</option>
-                    <option value="8">{idioma === "es" ? "Rosa" : "Pink"}</option>
-                    <option value="9">{idioma === "es" ? "Magenta" : "Magenta"}</option>
-                    <option value="10">{idioma === "es" ? "Violeta" : "Violet"}</option>
-                    <option value="11">{idioma === "es" ? "Gris" : "Gray"}</option>
-                    <option value="12">{idioma === "es" ? "Negro" : "Black"}</option>
+                    <option value="1">{idioma === "es" ? "AZUL" : "BLUE"}</option>
+                    <option value="2">{idioma === "es" ? "CELESTE" : "LIGHT BLUE"}</option>
+                    <option value="3">{idioma === "es" ? "VERDE" : "GREEN"}</option>
+                    <option value="4">{idioma === "es" ? "LIMA" : "LIME"}</option>
+                    <option value="5">{idioma === "es" ? "AMARILLO" : "YELLOW"}</option>
+                    <option value="6">{idioma === "es" ? "NARANJA" : "ORANGE"}</option>
+                    <option value="7">{idioma === "es" ? "ROJO" : "RED"}</option>
+                    <option value="8">{idioma === "es" ? "ROSA" : "PINK"}</option>
+                    <option value="9">{idioma === "es" ? "MAGENTA" : "MAGENTA"}</option>
+                    <option value="10">{idioma === "es" ? "VIOLETA" : "VIOLET"}</option>
+                    <option value="11">{idioma === "es" ? "GRIS" : "GRAY"}</option>
+                    <option value="12">{idioma === "es" ? "NEGRO" : "BLACK"}</option>
                 </select>
 
                 <br hidden={oculto} />

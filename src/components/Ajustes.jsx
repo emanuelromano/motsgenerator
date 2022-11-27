@@ -27,6 +27,7 @@ function Ajustes({ setTexto }) {
     const [forma, setForma] = useState(1);
     const [fondo, setFondo] = useState(1);
     const [play, setPlay] = useState(true);
+    const [linea, setLinea] = useState("line-through");
 
     // let musica = new Audio(audio)
     const musicaRef = useRef(new Audio(audio));
@@ -40,14 +41,13 @@ function Ajustes({ setTexto }) {
         let p = localStorage.getItem("play")
 
         if (p === "false") {
-            setPlay(false)
+            setPlay(false);
         } else {
             musicaRef.current.play();
-            setPlay(true)
+            setPlay(true);
         }
 
-
-    }, [setTexto])
+    }, [setTexto]);
 
     function textoIngresado(e) {
         let texto = e.target.value;
@@ -456,17 +456,17 @@ function Ajustes({ setTexto }) {
         nav('/languaje');
     }
 
-    function sonido() {
+    function sonido(e) {
         if (play) {
-            setPlay(false);
             musicaRef.current.pause();
+            setPlay(false);
             localStorage.setItem("play", false);
-            document.getElementById("boton-4").style.textDecorationLine = "line-through";
+            setLinea("line-through");
         } else {
-            setPlay(true);
             musicaRef.current.play();
+            setPlay(true);
             localStorage.setItem("play", true);
-            document.getElementById("boton-4").style.textDecorationLine = "none";
+            setLinea("none");
         }
     }
 
@@ -573,7 +573,7 @@ function Ajustes({ setTexto }) {
                 <div className="botones-mini">
                     <button className="boton-3" onClick={() => idiomaApp()}>{idioma === "es" ? "IDIOMA" : "LANGUAJE"}</button>
 
-                    <button className="boton-4" onClick={() => sonido()}>{idioma === "es" ? "SONIDO" : "SOUND"}</button>
+                    <button className="boton-4" style={{textDecoration: linea}} onClick={(e) => sonido(e)}>{idioma === "es" ? "SONIDO" : "SOUND"}</button>
 
                     <button className="boton-5" onClick={() => info()}>{idioma === "es" ? "INFO" : "ABOUT"}</button>
                 </div>

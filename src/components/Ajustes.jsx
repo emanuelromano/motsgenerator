@@ -543,18 +543,18 @@ function Ajustes({ setTexto }) {
                 <br hidden={oculto} />
 
                 <select name="imagen-fondo" id="imagenfondo" defaultValue={1} hidden={!oculto} onChange={(e) => imagenFondo(e)}>
-                    <option value="1">Neon Moon I</option>
-                    <option value="2">Kaotica</option>
-                    <option value="3">Echo</option>
-                    <option value="4">Kubik</option>
-                    <option value="5">Calypso</option>
-                    <option value="6">Supersolis</option>
-                    <option value="7">Ultra</option>
-                    <option value="8">Floris</option>
-                    <option value="9">Neon Moon II</option>
-                    <option value="10">Epiphane</option>
-                    <option value="11">Infinity Station</option>
-                    <option value="12">Coloratura</option>
+                    <option value="1">NEON MOON I</option>
+                    <option value="2">KAOTICA</option>
+                    <option value="3">ECHO</option>
+                    <option value="4">KUBIK</option>
+                    <option value="5">CALYPSO</option>
+                    <option value="6">SUPERSOLIS</option>
+                    <option value="7">ULTRA</option>
+                    <option value="8">FLORIS</option>
+                    <option value="9">NEON MOON II</option>
+                    <option value="10">EPIPHANE</option>
+                    <option value="11">INFINITY STATION</option>
+                    <option value="12">COLORATURA</option>
                 </select>
 
                 <br hidden={!oculto} />

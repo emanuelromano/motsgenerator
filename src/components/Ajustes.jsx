@@ -27,7 +27,7 @@ function Ajustes({ setTexto }) {
     const [forma, setForma] = useState(1);
     const [fondo, setFondo] = useState(1);
     const [play, setPlay] = useState(true);
-    const [linea, setLinea] = useState("line-through");
+    const [estilo, setEstilo] = useState("line-through");
 
     // let musica = new Audio(audio)
     const musicaRef = useRef(new Audio(audio));
@@ -42,9 +42,11 @@ function Ajustes({ setTexto }) {
 
         if (p === "false") {
             setPlay(false);
+            setEstilo("line-through");
         } else {
             musicaRef.current.play();
             setPlay(true);
+            setEstilo("none");
         }
 
     }, [setTexto]);
@@ -461,12 +463,12 @@ function Ajustes({ setTexto }) {
             musicaRef.current.pause();
             setPlay(false);
             localStorage.setItem("play", false);
-            setLinea("line-through");
+            setEstilo("line-through");
         } else {
             musicaRef.current.play();
             setPlay(true);
             localStorage.setItem("play", true);
-            setLinea("none");
+            setEstilo("none");
         }
     }
 
@@ -573,7 +575,7 @@ function Ajustes({ setTexto }) {
                 <div className="botones-mini">
                     <button className="boton-3" onClick={() => idiomaApp()}>{idioma === "es" ? "IDIOMA" : "LANGUAJE"}</button>
 
-                    <button className="boton-4" style={{textDecoration: linea}} onClick={(e) => sonido(e)}>{idioma === "es" ? "SONIDO" : "SOUND"}</button>
+                    <button className="boton-4" style={{textDecoration: estilo}} onClick={(e) => sonido(e)}>{idioma === "es" ? "MÚSICA" : "MUSIC"}</button>
 
                     <button className="boton-5" onClick={() => info()}>{idioma === "es" ? "INFO" : "ABOUT"}</button>
                 </div>

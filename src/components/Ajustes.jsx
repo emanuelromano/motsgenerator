@@ -575,7 +575,7 @@ function Ajustes({ setTexto }) {
                 <div className="botones-mini">
                     <button className="boton-3" onClick={() => idiomaApp()}>{idioma === "es" ? "IDIOMA" : "LANGUAJE"}</button>
 
-                    <button className="boton-4" style={{textDecoration: estilo}} onClick={(e) => sonido(e)}>{idioma === "es" ? "MÚSICA" : "MUSIC"}</button>
+                    <button className="boton-4" style={{ textDecoration: estilo }} onClick={(e) => sonido(e)}>{idioma === "es" ? "MÚSICA" : "MUSIC"}</button>
 
                     <button className="boton-5" onClick={() => info()}>{idioma === "es" ? "INFO" : "ABOUT"}</button>
                 </div>

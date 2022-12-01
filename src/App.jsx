@@ -1,6 +1,6 @@
 import './styles/App.css';
 import './styles/Fuentes.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Idioma from './components/Idioma';
 import Generador from './components/Generador';
@@ -10,8 +10,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-
+      <Router>
         <Header />
 
         <Routes>
@@ -21,7 +20,7 @@ function App() {
           <Route exact path='/info' element={<Info />} />
         </Routes>
 
-      </BrowserRouter>
+      </Router>
     </>
   );
 }

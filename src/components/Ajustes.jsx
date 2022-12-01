@@ -572,6 +572,8 @@ function Ajustes({ setTexto }) {
 
                 <button className="boton-guardar" id="botonguardar" onClick={() => guardarImagen()}>{idioma === "es" ? "⇩ GUARDAR IMAGEN ⇩" : "⇩ SAVE IMAGE ⇩"}</button>
 
+                <div className='linea'></div>
+
                 <div className="botones-mini">
                     <button className="boton-3" onClick={() => idiomaApp()}>{idioma === "es" ? "IDIOMA" : "LANGUAJE"}</button>
 

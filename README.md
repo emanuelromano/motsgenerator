@@ -19,9 +19,10 @@ So, this is basically a React app to generate and download images with the alien
 
 ## Future features:
 ```
+- New fonts!
+- New background music!
 - Square (1:1), landscape (16:9) and portrait (9:16) aspect ratios
 - Inprove website responsiveness on smaller screens
-- New background music!
 ```
 
 ## Built with:

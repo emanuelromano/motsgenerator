@@ -11,7 +11,8 @@ So, this is basically a React app to generate and download images with the alien
 1.0 - Initial release
 - Generate images with custom text in several alien fonts
 - Change the gradient color on the background
-- Set planets from The Spheres as background with their corresponding language
+- Set planets from The Spheres as the background with their respective language
+- Random colors and fonts
 - Play and pause background music
 - English and Spanish UI
 ```
@@ -19,8 +20,15 @@ So, this is basically a React app to generate and download images with the alien
 ## Future features:
 ```
 - Square (1:1), landscape (16:9) and portrait (9:16) aspect ratios
-- Inprove responsiveness on smaller screens
+- Inprove website responsiveness on smaller screens
 - New background music!
+```
+
+## Built with:
+```
+- [ReactJS](https://reactjs.org/)
+- [Framer Motion](https://github.com/framer/motion)
+- [HTML2Canvas](https://github.com/niklasvh/html2canvas)
 ```
 
 ## In the meantime...

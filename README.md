@@ -30,4 +30,5 @@ So, this is basically a React app to generate and download images with the alien
 - [Framer Motion](https://github.com/framer/motion)
 
 ## In the meantime...
-You can follow my fanpage, [Planeta Coldplay](https://linktr.ee/planetacoldplay), on (almost) every social network. See you there!
+- You can follow my fanpage, [Planeta Coldplay](https://linktr.ee/planetacoldplay), on (almost) every social network.
+- You will also find [my personal profile](https://twitter.com/eromanox) on Twitter. See you there!

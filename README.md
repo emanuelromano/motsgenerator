@@ -25,12 +25,11 @@ So, this is basically a React app to generate and download images with the alien
 ```
 
 ## Built with:
-```
+
 - [ReactJS](https://reactjs.org/)
 - [Framer Motion](https://github.com/framer/motion)
 - [HTML2Canvas](https://github.com/niklasvh/html2canvas)
-```
+
 
 ## In the meantime...
-
 You can follow my fanpage, [Planeta Coldplay](https://linktr.ee/planetacoldplay), on (almost) every social network. See you there!

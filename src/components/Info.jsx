@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import build from "../../package.json";
 import { motion } from 'framer-motion';
 
-function About() {
+function Info() {
 
   const [idioma, setIdioma] = useState("");
 
@@ -42,4 +42,4 @@ function About() {
   )
 }
 
-export default About;
+export default Info;

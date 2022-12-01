@@ -8,7 +8,7 @@ function Footer() {
   const [idioma, setIdioma] = useState("");
 
   useEffect(() => {
-    setIdioma(localStorage.getItem("idioma"))
+    setIdioma(localStorage.getItem("idioma"));
   }, [])
 
   // function boton() {

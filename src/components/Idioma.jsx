@@ -2,22 +2,21 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-function Languaje() {
+function Idioma() {
 
-    const inicio = useNavigate();
+    const nav = useNavigate();
 
     function english() {
-        localStorage.setItem("idioma", "en")
-        localStorage.setItem("textoinicial", "HELLO")
-        inicio("/generator")
+        localStorage.setItem("idioma", "en");
+        localStorage.setItem("textoinicial", "HELLO");
+        nav("/generator");
     }
 
     function español() {
-        localStorage.setItem("idioma", "es")
-        localStorage.setItem("textoinicial", "HOLA")
-        inicio("/generator")
+        localStorage.setItem("idioma", "es");
+        localStorage.setItem("textoinicial", "HOLA");
+        nav("/generator");
     }
-
 
     return (
         <motion.div
@@ -38,4 +37,4 @@ function Languaje() {
     )
 }
 
-export default Languaje;
+export default Idioma;

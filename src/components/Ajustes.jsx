@@ -488,18 +488,18 @@ function Ajustes({ setTexto }) {
                 <p>{idioma === "es" ? "LENGUAJE:" : "LANGUAGE:"}</p>
 
                 <select name="lenguajes" id="lenguajes" defaultValue={2} onChange={(e) => fuente(e)}>
-                    <option value="1">E.L. I (NEON MOON I)</option>
-                    <option value="2">KAOTICAN (KAOTICA)</option>
-                    <option value="3">MIRROR TEXT (ECHO)</option>
-                    <option value="4">QBLOK (KUBIK)</option>
-                    <option value="5">AQUAMARINE (CALYPSO)</option>
-                    <option value="6">SUPERSOLAR (SUPERSOLIS)</option>
-                    <option value="7">VOLTIK (ULTRA)</option>
-                    <option value="8">BLOOM (FLORIS)</option>
-                    <option value="9">E.L. II (NEON MOON II)</option>
-                    <option value="10">SPHERIC (EPIPHANE)</option>
-                    <option value="11">INFINITUM (INFINITY STATION)</option>
-                    <option value="12">COLORATURAN (COLORATURA)</option>
+                    <option value="1">E.L. I {!oculto ? "(NEON MOON I)" : ""}</option>
+                    <option value="2">KAOTICAN {!oculto ? "(KAOTICA)" : ""}</option>
+                    <option value="3">MIRROR TEXT {!oculto ? "(ECHO)" : ""}</option>
+                    <option value="4">QBLOK {!oculto ? "(KUBIK)" : ""}</option>
+                    <option value="5">AQUAMARINE {!oculto ? "(CALYPSO)" : ""}</option>
+                    <option value="6">SUPERSOLAR {!oculto ? "(SUPERSOLIS)" : ""}</option>
+                    <option value="7">VOLTIK {!oculto ? "(ULTRA)" : ""}</option>
+                    <option value="8">BLOOM {!oculto ? "(FLORIS)" : ""}</option>
+                    <option value="9">E.L. II {!oculto ? "(NEON MOON II)" : ""}</option>
+                    <option value="10">SPHERIC {!oculto ? "(EPIPHANE)" : ""}</option>
+                    <option value="11">INFINITUM {!oculto ? "(INFINITY STATION)" : ""}</option>
+                    <option value="12">COLORATURAN {!oculto ? "(COLORATURA)" : ""}</option>
                     {/* <option value="13">Auroran (Aurora)</option> */}
                 </select>
 

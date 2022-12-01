@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import build from "../../package.json";
+import { motion } from 'framer-motion';
 
 function About() {
 
@@ -9,11 +10,15 @@ function About() {
   let version = build.version;
 
   useEffect(() => {
-      setIdioma(localStorage.getItem("idioma"));
+    setIdioma(localStorage.getItem("idioma"));
   }, [])
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="informacion">
         <h2>{idioma === "es" ? "SOBRE ESTA APP:" : "ABOUT THIS APP:"}</h2>
 
@@ -33,7 +38,7 @@ function About() {
 
         <Link to='/generator'> <button className="atras">{idioma === "es" ? "⇦ ATRÁS" : "⇦ BACK"}</button> </Link>
       </div>
-    </>
+    </motion.div>
   )
 }
 

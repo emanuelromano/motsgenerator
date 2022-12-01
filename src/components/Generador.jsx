@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Ajustes from './Ajustes';
 import Texto from './Texto';
 import Footer from './Footer';
+import { motion } from 'framer-motion';
 
 function Generador() {
 
@@ -14,7 +15,11 @@ function Generador() {
     // }, [])
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        >
             <div className="contenedor" id="contenedor">
 
                 <div className="texto-caja" id="textocaja">
@@ -41,7 +46,7 @@ function Generador() {
             {/* <div className="espacio" id="espacio"></div> */}
 
             <Footer />
-        </>
+        </motion.div>
     )
 }
 

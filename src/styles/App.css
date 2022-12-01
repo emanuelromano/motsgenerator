@@ -301,12 +301,17 @@ footer {
 
 .texto-caja {
   width: 450px;
+  min-width: 450px;
   height: 450px;
+  min-height: 450px;
+  display: block;
   border: 1px solid #A791FF;
   box-shadow: 0px 0px 20px #a791ffb6;
   margin: 20px;
   box-sizing: border-box;
   transition-duration: 0.2s;
+  /* position: relative;
+  display: inline-block; */
 }
 
 .generador-caja {

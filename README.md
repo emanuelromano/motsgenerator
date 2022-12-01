@@ -8,13 +8,17 @@ So, this is basically a React app to generate and download images with the alien
 
 ## Changelog:
 ```
+1.1
+- Play and pause background music
+- Animated UI
+- Minor bug fixes
+
 1.0 - Initial release
-- Generate images with custom text in several alien fonts
+- Generate PNG images with custom text in 12 different alien languages
 - Change the gradient color on the background
 - Set planets from The Spheres as the background with their respective language
-- Random colors and fonts
-- Play and pause background music
-- English and Spanish UI
+- Randomizer: Random colors and fonts
+- In-app languages: English and Spanish
 ```
 
 ## Future features:

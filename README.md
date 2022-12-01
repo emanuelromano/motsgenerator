@@ -37,4 +37,4 @@ So, this is basically a React app to generate and download images with the alien
 
 ## In the meantime...
 - You can follow my fanpage, [Planeta Coldplay](https://linktr.ee/planetacoldplay), on (almost) every social network.
-- You will also find [my personal profile](https://twitter.com/eromanox) on Twitter. See you there!
+- You can also find my personal profiles on [Twitter](https://twitter.com/eromanox) and [LinkedIn](https://www.linkedin.com/in/emanuelromano/). See you there!

@@ -23,13 +23,13 @@ So, this is basically a React app to generate and download images with the alien
 
 ## Future features:
 ```
-- New fonts!
+- New fonts! (Aurora)
 - New background music!
 - Square (1:1), landscape (16:9) and portrait (9:16) aspect ratios
 - Inprove website responsiveness on smaller screens
 ```
 
-## Built with:
+## Built using:
 - [ReactJS](https://reactjs.org/)
 - [HTML2Canvas](https://github.com/niklasvh/html2canvas)
 - [Framer Motion](https://github.com/framer/motion)

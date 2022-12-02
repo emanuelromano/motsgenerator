@@ -29,10 +29,10 @@ So, this is basically a React app to generate and download images with the alien
 ## Future features:
 ```
 - New languajes/planets! (Auroran/Aurora)
-- New background music!
 - New fonts and backgrounds!
+- New background music!
 - Square (1:1), landscape (16:9) and portrait (9:16) aspect ratios
-- Inprove website responsiveness on smaller screens
+- Improve website responsiveness on smaller screens
 ```
 
 ## Built using:

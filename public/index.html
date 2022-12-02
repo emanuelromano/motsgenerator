@@ -4,23 +4,34 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="MOTS Generator" content="Generate your own images with a unique Music of the Spheres theme!" />
+  <meta name="Music of the Spheres Generator" content="Generate your own images with a unique Music of the Spheres theme!" />
   <!-- Escala inicial modificada a 0.8 -->
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>MOTS Generator</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"
-    integrity="sha512-UcDEnmFoMh0dYHu0wGsf5SKB7z7i5j3GuXHCnb3i4s44hfctoLihr896bxM0zL7jGkcHQXXrJsFIL62ehtd6yQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Music of the Spheres Generator</title>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('worker.js').then(function (registration) {
+          console.log('Worker registration successful', registration.scope);
+        }, function (err) {
+          console.log('Worker registration failed', err);
+        }).catch(function (err) {
+          console.log(err);
+        });
+      });
+    } else {
+      console.log('Service Worker is not supported by browser.');
+    }
+  </script>
 </body>
 
 </html>

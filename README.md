@@ -8,6 +8,11 @@ So, this is basically a React app to generate and download images with the alien
 
 ## Changelog:
 ```
+1.2
+- Now this is a PWA (Progressive Web App)!
+- Smoother UI animations
+- Minor bug fixes
+
 1.1
 - Play and pause background music
 - Animated UI

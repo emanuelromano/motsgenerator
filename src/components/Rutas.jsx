@@ -12,7 +12,9 @@ function Rutas() {
     const location = useLocation();
 
     return (
-        <AnimatePresence>
+        <AnimatePresence mode='wait'>
+            {/* exitBeforeEnter reemplazado por mode='wait' */}
+            {/* Añadir initial={false} a AnimatePresence para evitar animaciones en recarga*/}
             <Routes location={location} key={location.pathname}>
                 <Route exact path='/' element={<Idioma />} />
                 <Route exact path='/languaje' element={<Idioma />} />

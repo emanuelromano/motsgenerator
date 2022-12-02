@@ -503,7 +503,7 @@ function Ajustes({ setTexto }) {
                     {/* <option value="13">Auroran (Aurora)</option> */}
                 </select>
 
-                <p>{idioma === "es" ? "FONDO:" : "BBACKGROUND:"}</p>
+                <p>{idioma === "es" ? "FONDO:" : "BACKGROUND:"}</p>
 
                 <div className="radiobuttons">
                     <div className="radiolabel">

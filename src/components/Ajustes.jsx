@@ -26,7 +26,7 @@ function Ajustes({ setTexto }) {
     const [oculto, setOculto] = useState(false);
     const [forma, setForma] = useState(1);
     const [fondo, setFondo] = useState(1);
-    const [play, setPlay] = useState(true);
+    const [play, setPlay] = useState(false);
     const [estilo, setEstilo] = useState("line-through");
 
     // let musica = new Audio(audio)

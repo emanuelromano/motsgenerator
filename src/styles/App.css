@@ -62,84 +62,32 @@ a {
 
 
 /* -- Cabecera ----------------------------------------------------------------------------- */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
 .banner {
   border: 1px solid #A791FF;
   border-radius: 8px;
   box-sizing: border-box;
   margin: 10px;
+  width: calc(100vw - 35px);
   background-color: rgba(20, 8, 48, 0.537);
   backdrop-filter: blur(5px);
 }
 
-.banner ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.banner li {
-  display: inline;
-  float: left;
-  text-align: center;
-}
-
-/* .banner li label {
-  display: block;
-  color: violet;
-  text-shadow: 2px 2px 15px violet;
-  font-family: alienfont;
-  font-size: 25px;
-  text-align: center;
-  padding: 20px 31px;
-  transition-duration: 0.2s;
-  overflow: hidden;
-  user-select: none;
-}
-
-.banner .mots {
-  transition-duration: 0.2s;
-}
-
-.banner .gen {
-  transition-duration: 0.2s;
-}
-
-.banner li label:hover .mots {
-  color: white;
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
-  filter: brightness(120%);
-}
-
-.banner label:hover .gen {
-  background-image: linear-gradient(90deg,
-      rgba(255, 0, 0, 1) 0%,
-      rgba(255, 154, 0, 1) 10%,
-      rgba(208, 222, 33, 1) 20%,
-      rgba(79, 220, 74, 1) 30%,
-      rgba(63, 218, 216, 1) 40%,
-      rgba(47, 201, 226, 1) 50%,
-      rgba(28, 127, 238, 1) 60%,
-      rgba(95, 21, 242, 1) 70%,
-      rgba(186, 12, 248, 1) 80%,
-      rgba(251, 7, 217, 1) 90%,
-      rgba(255, 0, 0, 1) 100%);
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0px 0px 10px rgb(230, 0, 255);
-  filter: brightness(120%);
-} */
-
 .banner li label {
-  display: block;
+  /* display: block; */
   color: rgb(255, 255, 255);
   /* text-shadow: 2px 2px 15px rgb(255, 255, 255); */
   font-family: alienfont;
   font-size: 25px;
-  text-align: center;
-  padding: 20px 31px;
+  /* text-align: center; */
+  /* padding: 20px 31px; */
   transition-duration: 0.2s;
-  overflow: hidden;
+  /* overflow: hidden; */
   user-select: none;
 }
 
@@ -177,61 +125,11 @@ a {
   filter: brightness(150%);
 }
 
-/* .banner .engranaje {
-  display: block;
-  color: violet;
-  text-shadow: 2px 2px 15px violet;
-  font-family: alienfont;
-  font-size: 35px;
-  text-align: center;
-  padding: 10px 25px;
-  text-decoration: none;
-  transition-duration: 0.2s;
-  overflow: hidden;
-  user-select: none;
-  cursor: pointer;
-} */
-
 .banner .engranaje:hover {
   color: white;
   text-shadow: 0px 0px 10px rgb(255, 255, 255);
   filter: brightness(120%);
 }
-
-/* .banner button {
-  float: right;
-  display: block;
-  color: rgba(255, 255, 255, 0);
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 4px;
-  border: none;
-  font-family: alienfont;
-  text-align: center;
-  transition-duration: 0.2s;
-  height: 30px;
-
-  background-image: url(/src/media/IDIOMA1.png);
-  background-size: 55px;
-  background-repeat: no-repeat;
-  background-position: center;
-  user-select: none;
-} */
-
-/* .banner button:hover {
-  background-color: rgb(241, 50, 241);
-  box-shadow: 0px 0px 10px rgb(241, 50, 241);
-
-  background-image: url(/src/media/IDIOMA2.png);
-  background-size: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* .banner button:active {
-  color: rgba(255, 255, 255, 0);
-  background-color: rgb(0, 0, 0);
-  transition-duration: 0.01s;
-} */
 
 
 /* -- Pie de página ------------------------------------------------------------------------ */
@@ -314,15 +212,26 @@ footer {
   display: inline-block; */
 }
 
-.generador-caja {
+.generador-caja-txt {
   width: 450px;
-  height: 450px;
-  border: 1px solid #A791FF;
   box-sizing: border-box;
-  border-radius: 8px;
   margin: 20px;
+}
+
+.generador-caja {
+  border: 1px solid #A791FF;
   background-color: rgba(20, 8, 48, 0.537);
   backdrop-filter: blur(5px);
+  border-radius: 8px;
+}
+
+.hecho {
+  color: violet;
+  font-family: alienfont;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5%;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 /* @media screen and (max-width:1200px) {
@@ -501,7 +410,7 @@ input[type="radio"] {
   border-radius: 5px;
   font-size: 13px;
   height: 30px;
-  margin: 2.5% 2.5% 0% 5%;
+  margin: 5% 2.5% 5% 5%;
   padding: 0%;
   transition-duration: 0.2s;
   overflow: hidden;
@@ -529,7 +438,7 @@ input[type="radio"] {
   border-radius: 5px;
   font-size: 13px;
   height: 30px;
-  margin: 2.5% 2.5% 0% 2.5%;
+  margin: 5% 2.5% 5% 2.5%;
   padding: 0%;
   transition-duration: 0.2s;
   overflow: hidden;
@@ -558,7 +467,7 @@ input[type="radio"] {
   border-radius: 5px;
   font-size: 13px;
   height: 30px;
-  margin: 2.5% 5% 0% 2.5%;
+  margin: 5% 5% 5% 2.5%;
   padding: 0%;
   transition-duration: 0.2s;
   overflow: hidden;
@@ -586,7 +495,7 @@ input[type="radio"] {
   font-size: 18px;
   height: 30px;
   width: 90%;
-  margin: 5% 5% 2.5% 5%;
+  margin: 5% 5% 5% 5%;
   padding: 0%;
   transition-duration: 0.2s;
   overflow: hidden;

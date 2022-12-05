@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Ajustes from './Ajustes';
 import Texto from './Texto';
-import Footer from './Footer';
-import { motion } from 'framer-motion';
+// import Footer from './Footer';
 
 function Generador() {
 
     const [texto, setTexto] = useState("");
     const [fuente, setFuente] = useState("kaotican");
-    // const [idioma, setIdioma] = useState("");
+    const [idioma, setIdioma] = useState("");
 
-    // useEffect(() => {
-    //     setIdioma(localStorage.getItem("idioma"));
-    // }, [])
+    useEffect(() => {
+        setIdioma(localStorage.getItem("idioma"));
+    }, [])
 
     return (
         <motion.div
@@ -30,11 +30,19 @@ function Generador() {
                     />
                 </div>
 
-                <div className="generador-caja">
-                    <Ajustes
-                        setTexto={setTexto}
-                        setFuente={setFuente}
-                    />
+                <div className='generador-caja-txt'>
+                    <div className="generador-caja">
+                        <Ajustes
+                            setTexto={setTexto}
+                            setFuente={setFuente}
+                        />
+
+
+                    </div>
+
+                    <div className='hecho'>
+                        {idioma === "es" ? "HECHO POR" : "MADE BY"} <a className="link" href="https://linktr.ee/planetacoldplay" target="_blank" rel="noreferrer">PLANETA COLDPLAY</a> · 2022
+                    </div>
                 </div>
             </div>
 
@@ -46,7 +54,7 @@ function Generador() {
 
             {/* <div className="espacio" id="espacio"></div> */}
 
-            <Footer />
+            {/* <Footer /> */}
         </motion.div>
     )
 }

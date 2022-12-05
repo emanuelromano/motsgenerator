@@ -7,8 +7,8 @@
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    -webkit-animation: marquee 80s linear infinite;
-    animation: marquee 80s linear infinite;
+    -webkit-animation: marquee 100s linear infinite;
+    animation: marquee 100s linear infinite;
 }
 
 .marquee p {

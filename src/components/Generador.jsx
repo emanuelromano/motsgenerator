@@ -11,6 +11,7 @@ function Generador() {
     const [idioma, setIdioma] = useState("");
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         setIdioma(localStorage.getItem("idioma"));
     }, [])
 

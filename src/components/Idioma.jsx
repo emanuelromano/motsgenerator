@@ -9,6 +9,7 @@ function Idioma() {
     function english() {
         localStorage.setItem("idioma", "en");
         localStorage.setItem("textoinicial", "HELLO");
+        window.scrollTo(0, 0);
         nav("/generator");
     }
 

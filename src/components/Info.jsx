@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import build from "../../package.json";
 import { motion } from 'framer-motion';
 
 function Info() {
 
+  const nav = useNavigate();
   const [idioma, setIdioma] = useState("");
 
   let version = build.version;
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setIdioma(localStorage.getItem("idioma"));
   }, [])
+
+  function atras() {
+    nav('/generator');
+  }
 
   return (
     <motion.div
@@ -46,7 +52,7 @@ function Info() {
           </li>
         </ul>
 
-        <Link to='/generator'> <button className="atras">{idioma === "es" ? "⇦ ATRÁS" : "⇦ BACK"}</button> </Link>
+        <button className="atras" onClick={() => atras()}>{idioma === "es" ? "⇦ ATRÁS" : "⇦ BACK"}</button>
       </div>
     </motion.div>
   )

@@ -1,17 +1,17 @@
-.wrapper {
+.contenedor-scroll {
     max-width: 100%;
     overflow: hidden;
 }
 
-.marquee {
+.scroll {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    -webkit-animation: marquee 100s linear infinite;
-    animation: marquee 100s linear infinite;
+    animation: scroll 100s linear infinite;
+    -webkit-animation: scroll 100s linear infinite;
 }
 
-.marquee p {
+.scroll p {
     margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 12px;
@@ -22,36 +22,19 @@
     user-select: none;
 }
 
-.marquee p span:hover {
-    font-family: alienfont;
-}
-
-/* @keyframes marquee {
+@keyframes scroll {
     0% {
-      transform: translate3d(0%, 0, 0);
-    }
-    100% {
-      transform: translate3d(-100%, 0, 0);
-    }
-  } */
-
-
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0%);
-        -webkit-transform: translateX(0%);
+        transform: translateX(2%);
     }
 
     100% {
         transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
     }
 }
 
-@-webkit-keyframes marquee {
+@-webkit-keyframes scroll {
     0% {
-        -webkit-transform: translateX(0%);
+        -webkit-transform: translateX(2%);
     }
 
     100% {

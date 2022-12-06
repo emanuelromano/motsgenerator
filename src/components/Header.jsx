@@ -19,8 +19,8 @@ function Header() {
         >
             <div className='sticky'>
                 <div className="banner">
-                    <div className="wrapper">
-                        <div className="marquee">
+                    <div className="contenedor-scroll">
+                        <div className="scroll">
                             <p>
                                 · <span style={{ fontFamily: "alienfont", color: "white", textShadow: "0px 0px 20px white" }}>MUSIC of the SPHERES GENERATOR</span> ·· <span style={{ fontFamily: "eli", color: "yellow", textShadow: "0px 0px 20px yellow" }}>MUSIC of the SPHERES GENERATOR</span> ·· <span style={{ fontFamily: "kaotican", color: "violet", textShadow: "0px 0px 20px violet" }}>MUSIC of the SPHERES GENERATOR</span> ·· <span style={{ fontFamily: "mirrortext", color: "orange", textShadow: "0px 0px 20px orange" }}>MUSIC of the SPHERES GENERATOR</span> ·
                             </p>

@@ -79,15 +79,10 @@ a {
 }
 
 .banner li label {
-  /* display: block; */
   color: rgb(255, 255, 255);
-  /* text-shadow: 2px 2px 15px rgb(255, 255, 255); */
   font-family: alienfont;
   font-size: 25px;
-  /* text-align: center; */
-  /* padding: 20px 31px; */
   transition-duration: 0.2s;
-  /* overflow: hidden; */
   user-select: none;
 }
 
@@ -208,8 +203,6 @@ footer {
   margin: 20px;
   box-sizing: border-box;
   transition-duration: 0.2s;
-  /* position: relative;
-  display: inline-block; */
 }
 
 .generador-caja-txt {
@@ -325,6 +318,7 @@ input[type="radio"] {
   height: 18px;
   accent-color: rgb(241, 50, 241);
   cursor: pointer;
+  user-select: none;
 }
 
 

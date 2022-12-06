@@ -16,13 +16,8 @@
   @media screen and (max-width: 767px) {
     height: 100%;
     overflow-y: auto;
-}
-} */
+} } */
 
-/* body {
-  transform: scale(1);
-  transform-origin: 0 0;
-} */
 
 html {
   background-color: #000000;

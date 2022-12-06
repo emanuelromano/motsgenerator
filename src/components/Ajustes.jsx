@@ -417,7 +417,7 @@ function Ajustes({ setTexto }) {
         setForma(1);
         setFondo(1);
 
-        document.getElementById("contenedor").style.margin = "110px 0px 20px 0px";
+        document.getElementById("contenedor").style.margin = "130px 0px 20px 0px";
         // document.getElementById("advertencia").style.display = "none";
         // document.getElementById("espacio").style.display = "none";
     }

@@ -73,6 +73,7 @@ a {
   border-radius: 8px;
   box-sizing: border-box;
   margin: 10px;
+  margin-top: 20px;
   width: calc(100vw - 35px);
   background-color: rgba(20, 8, 48, 0.537);
   backdrop-filter: blur(5px);
@@ -135,28 +136,19 @@ a {
 }
 
 footer {
-  flex: 1;
-
-  color: violet;
-  font-family: alienfont;
-  text-align: left;
-  font-size: 9px;
-  margin: 10px;
-
-  justify-content: center;
-
+  height: 30px;
   position: fixed;
   bottom: 0;
-  width: 97%;
+  width: 100%;
 
-  box-sizing: border-box;
-  border: 1px solid #A791FF;
-  border-radius: 30px;
-
-  background-color: rgba(20, 8, 48, 0.537);
+  background-color: rgb(20, 8, 48);
   backdrop-filter: blur(5px);
   padding-left: 15px;
   user-select: none;
+
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
 }
 
 
@@ -189,7 +181,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   flex-flow: wrap;
-  margin: 110px 0px 20px 0px;
+  margin: 130px 0px 20px 0px;
 }
 
 .texto-caja {
@@ -557,7 +549,7 @@ input[type="radio"] {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 700px;
+  height: 800px;
 }
 
 .boton-idioma {
@@ -620,7 +612,7 @@ h2 {
 }
 
 .informacion {
-  margin: 130px 10px;
+  margin: 150px 10px;
   border: 1px solid #A791FF;
   border-radius: 8px;
   padding: 20px;
@@ -630,6 +622,13 @@ h2 {
 }
 
 .informacion p {
+  margin-left: 22px;
+  color: white;
+  font-family: alienfont;
+  font-size: 20px;
+}
+
+.informacion li {
   color: white;
   font-family: alienfont;
   font-size: 20px;

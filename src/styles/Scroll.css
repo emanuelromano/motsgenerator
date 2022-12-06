@@ -1,14 +1,16 @@
 .contenedor-scroll {
     max-width: 100%;
     overflow: hidden;
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
 }
 
 .scroll {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    animation: scroll 100s linear infinite;
-    -webkit-animation: scroll 100s linear infinite;
+    animation: scroll 200s linear infinite;
+    -webkit-animation: scroll 200s linear infinite;
 }
 
 .scroll p {

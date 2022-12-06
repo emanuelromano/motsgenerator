@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Ajustes from './Ajustes';
 import Texto from './Texto';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 function Generador() {
 
@@ -54,7 +54,7 @@ function Generador() {
 
             {/* <div className="espacio" id="espacio"></div> */}
 
-            {/* <Footer /> */}
+            <Footer />
         </motion.div>
     )
 }
